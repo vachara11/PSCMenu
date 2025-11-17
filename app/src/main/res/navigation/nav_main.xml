@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_main">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.vachara.pscmenu2.fragments.HomeFragment"
+        android:label="หน้าหลัก"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.vachara.pscmenu2.fragments.ProductFragment"
+        android:label="หน้าสินค้า"
+        tools:layout="@layout/fragment_product" />
+    <fragment
+        android:id="@+id/addproductFragment"
+        android:name="com.vachara.pscmenu2.fragments.AddProductFragment"
+        android:label="หน้าเพิ่มสินค้า"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.vachara.pscmenu2.fragments.NotificationFragment"
+        android:label="หน้าแจ้งเตือน"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.vachara.pscmenu2.fragments.AccountFragment"
+        android:label="หน้าผู้ใช้งาน"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.vachara.pscmenu2.fragments.AboutFragment"
+        android:label="หน้าเกี่ยวกับเรา"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.vachara.pscmenu2.fragments.ServiceFragment"
+        android:label="หน้าบริการ"
+        tools:layout="@layout/fragment_service" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.vachara.pscmenu2.fragments.SettingFragment"
+        android:label="หน้าตั้งค่า"
+        tools:layout="@layout/fragment_setting" />
 </navigation>
